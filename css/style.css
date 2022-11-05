@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+* {
+  font-family: 'Ubuntu',sans-serif;
+  }
+/* Backgrounds */
+    .bg-primary-color{
+      background-color:  #0d6efd;
+      background: linear-gradient(.25turn,#0d6efd,rgb(9, 9, 121));
+    }
+
+    .bg-primary-color-cont {
+      animation: gradient 10s ease infinite;
+      background: #b33900;
+      background: linear-gradient(90deg, #b33900 0%, #ff7f00 35%, #ff9f31 100%) no-repeat;
+      background-size: 300% 300%;
+    }
+
+    .bg-primary-color-emp {
+      animation: gradient 10s ease infinite;
+      background: #014d01;
+      background: linear-gradient(90deg, #014d01 0%, #1cbb11 35%, #26e04e 100%) no-repeat;
+      background-size: 300% 300%;
+    }
+
+    .bg-primary-color-cond {
+      animation: gradient 10s ease infinite;
+      background: #4568DC;
+      background: linear-gradient(90deg, #4568DC 0%, #774879 100%) no-repeat;
+      background-size: 300% 300%;
+    }
+
+    .bg-secondary-color {
+      background-color: #E5E2E3;
+    }
+
+    .bg-layout-escolhas {
+      background-image: linear-gradient(#fff,#fff,#E5E2E3);
+    }
+
+    .bg-qyonbank {
+      background-image: linear-gradient(45deg, #30cfd0 0%, #330867 100%);
+    }
+
+    .bg-footer {
+      background-color: rgb(9, 9, 121);
+    }
+
+    .bg-contabil{
+      min-height: 93vh;
+      animation: gradient 10s ease infinite;
+      background: #b33900;
+      background: linear-gradient(90deg, #b33900 0%, #ff7f00 35%, #ff9f31 100%) no-repeat;
+      background-size: 300% 300%;
+    }
+
+    .bg-empresa{
+      min-height: 93vh;
+      animation: gradient 10s ease infinite;
+      background: #014d01;
+      background: linear-gradient(90deg, #014d01 0%, #1cbb11 35%, #26e04e 100%) no-repeat;
+      background-size: 300% 300%;
+    }
+
+    .bg-condominio{
+      min-height: 93vh;
+      animation: gradient 10s ease infinite;
+      background: #4568DC;
+      background: linear-gradient(90deg, #4568DC 0%, #774879  100%) no-repeat;
+      background-size: 300% 300%;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+/* About Us */
+    .title-AboutUs{ 
+      z-index: 1;
+      transform: translateY(3em);
+    }
+
+    .title-AboutUs h3 {
+      position: relative;
+    }
+    
+    .text-AboutUs {
+      display: flex;
+      font-size: 1.5em;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+    }
+
+
+
+
+
+
+    .primary-color{
+      color: #155AFF;
+    }
+
+/* Navbar links */
+    #link a{
+      position: relative;
+      font-weight: 450;
+      font-size: 1.2em;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 0.3em;
+    }
+
+    #link a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #0d18ad;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    .bg-primary-color-cont #link a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #ad2d0d;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    .bg-primary-color-emp #link a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #0dad35;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    .bg-primary-color-cond #link a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #3314bd;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+
+    #link a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    .navbar-brand {
+      display: flex;
+    }
+
+    .navbar-brand img {
+      width: 40px;
+    }
+
+    .navbar-brand span {
+      font-weight: 700;
+      font-size: 1.5em;
+      margin-left: 0.5em;
+    }
+
+    #navbar-items .navbar-nav {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+    }
+    
+    #navbar-items .nav-item {
+      margin: 0 1em;
+    }    
+
+    #navbar-items i {
+      text-align: center;
+      color: #fff;
+      font-size: 1.15em;
+      vertical-align: middle;
+      position: relative;
+      top: 20%;
+      transform: translateY(-20%); 
+    }
+
+    #btn-navbar {
+      border-radius: 100%;
+      background-color: #0d18ad;
+    }
+
+    .bg-primary-color-cont #btn-navbar {
+      border-radius: 100%;
+      background-color: #ad3a0d;
+    }
+
+    .bg-primary-color-emp #btn-navbar {
+      border-radius: 100%;
+      background-color: #0dad1a;
+    }
+
+    .bg-primary-color-cond #btn-navbar {
+      border-radius: 100%;
+      background-color: #450dad;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #0d18ad;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .bg-primary-color-cont .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #b1410e;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .bg-primary-color-emp .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #0eb10e;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .bg-primary-color-cond .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #4c0eb1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #1625ff;}
+
+    .bg-primary-color-cont .dropdown-content a:hover {background-color: #ff6016;}
+
+    .bg-primary-color-emp .dropdown-content a:hover {background-color: #16ff35;}
+
+    .bg-primary-color-cond .dropdown-content a:hover {background-color: #5c16ff;}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* Carousel */
+    .myCarousel {
+      height: 400px;
+    }
+
+/* Banners */
+    #mini-banners i {
+      font-size: 4em;
+    }
+
+    #mini-banners {
+      padding-bottom: 3em;
+    }
+
+    .spaceBot {
+      margin-bottom: 1em;
+    }
+
+    .titleBlue {
+      color: rgb(19, 0, 189);
+    }
+
+    .titleCont {
+      color: rgb(189, 76, 0);
+      margin-bottom: 1.5em;
+    }
+
+    .titleEmp {
+      color: rgb(25, 145, 21);
+      margin-bottom: 1.5em;
+    }
+
+    .titleCond {
+      color: rgb(121, 51, 201);
+      margin-bottom: 1.5em;
+    }
+
+    .mycard{
+      position: relative;
+      cursor: pointer;
+  }
+  
+  .mycard .face{
+      width: 21rem;
+      height: 18rem;
+      transition: 0.5s;
+      border-radius: 5px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .mycard .face.face1{
+      position: relative;
+      background-color: rgba(6, 6, 36, 0.979);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      transform: translateY(9rem);
+  }
+  
+  .mycard:hover .face.face1{
+      background-color: rgba(0, 26, 255, 0.849);
+      transform: translateY(0);
+  }
+  
+  .mycard .face.face1 .content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.5;
+      transition: 0.5s;
+  }
+  
+  .mycard:hover .face.face1 .content{
+      opacity: 1;
+  }
+  
+  .mycard .face.face1 .content i{
+      color: #fff;
+      max-width: 100px;
+      transition: 1s;
+  }
+
+  .mycard:hover .face.face1 .content i {
+    color: black;
+  }
+  
+  .mycard .face.face1 .content h3{
+      margin: 10px 0 0;
+      color: #fff;
+      text-align: center;
+      font-size: 1.5em;
+  }
+  
+  .mycard .face.face2 {
+      position: relative;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+      transform: translateY(-9rem);
+  }
+  
+  .mycard:hover .face.face2{
+      transform: translate(0);
+  }
+
+  .mycard .face.face2 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* Intrudoção das pags */
+    .titlePageCont {
+      animation: gradient 10s ease infinite;
+      background: -webkit-linear-gradient(left, #ff9f31 0%, #ff7f00 35%, #b33900 100%) no-repeat;
+      background: linear-gradient(to right, #ff9f31 0%, #ff7f00 35%, #b33900 100%) no-repeat;
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 5em;
+      font-weight: 500;
+      padding-bottom: 0.5em;
+    }
+
+    .titlePageEmp {
+      animation: gradient 10s ease infinite;
+      background: -webkit-linear-gradient(left, #2b961f 0%, #14870c 35%, #014d01 100%) no-repeat;
+      background: linear-gradient(to right, #26e04e 0%, #1cbb11 35%, #014d01 100%) no-repeat;
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 5em;
+      font-weight: 500;
+      padding-bottom: 0.5em;
+    }
+
+    .titlePageCond {
+      animation: gradient 10s ease infinite;
+      background: -webkit-linear-gradient(left, #774879 0%,#4568DC 100%) no-repeat;
+      background: linear-gradient(to right, #774879 0%,#4568DC 100%) no-repeat;
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 5em;
+      font-weight: 500;
+      padding-bottom: 0.5em;
+    }
+
+
+    .pages {
+      display: flex;
+      align-items: center;
+    }
+
+    .pages p{
+      color: #fff;
+      font-weight: 200;
+      font-size: 1.5em;
+    }
+
+    .secondaryText {
+      color: #7a7a7a;
+    }
+
+    #qyon-bank {
+      padding-top: 2em;
+      font-size: 1.5em;
+    }
+
+    @media (min-width: 768px) {
+      #mini-banners {
+       margin-top: -15em;
+      }
+      
+      .nav-item i{
+        font-size: 1.25em;
+      }
+
+      
+    }
+
+    @media (max-width: 600px) {
+      .fon {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .cont-produtos .mycard2 .face.face1{
+        max-height: 18em;
+        max-width: 100%;
+      }
+
+      .cont-produtos .mycard2 .face.face2{
+        max-width: 100%;
+      }
+
+      .titlePageCond {
+        font-size: 3.5rem;
+      }
+
+      .titlePageCont {
+        font-size: 3.5rem;
+      }
+
+      .titlePageEmp {
+        font-size: 3.5rem;
+      }
+
+    }
+
+
+
+
+/* Cards produtos */
+  .cont-produtos .mycard2 {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+
+  .cont-produtos .mycard2 .face{
+    width: 21em;
+    height: 18em;
+    transition: 0.8s;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont-produtos .mycard2 .face.face1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.cont-produtos .mycard2 .face.face1 .bgImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(transparent, rgba(247, 75, 32, 0.623),rgba(248, 66, 10, 0.863));
+  width: 100%;
+  height: 100%;
+}
+
+.cont-produtos .mycard2 .face.face1 .bgImg2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(transparent, rgba(25, 175, 45, 0.623),rgba(16, 126, 16, 0.863));
+  width: 100%;
+  height: 100%;
+}
+
+.cont-produtos .mycard2 .face.face1 .bgImg3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(transparent, rgba(247, 75, 32, 0.623),rgba(248, 66, 10, 0.863));
+  width: 100%;
+  height: 100%;
+}
+
+.btnSaibaMais {
+  background-color: rgb(194, 3, 3);
+}
+
+.btnSaibaMais2 {
+  background-color: rgb(20, 151, 2);
+}
+
+.btnSaibaMais3 {
+  background-color: rgb(64, 0, 184);
+}
+
+
+.cont-produtos .mycard2.active .face{
+  border-radius: 0.5em;
+}
+
+.cont-produtos .mycard2.active .face.face1{
+  height: 14em;
+  width: 35em;
+}
+
+.cont-produtos .mycard2 .face.face1 .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.cont-produtos .mycard2.active .face.face1 .content{
+  opacity: 1;
+}
+
+.cont-produtos .mycard2 .face.face1 .content h3{
+  margin: 10px 0 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.cont-produtos .mycard2 .face.face2 {
+  position: relative;
+  background-color: #ccc5ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-18rem);
+}
+
+.cont-produtos .mycard2.active .face.face2{
+  transform: translate(0);
+  height: auto;
+  width: 35em;
+}
+
+.cont-produtos .mycard2 .face.face2 .content{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#qyonerpadmcont {
+  background-image: url(../img/qyon.jpg);
+  background-size: cover;
+}
+
+#qyoncrmcont {
+  background-image: url(../img/qyoncrmcont.jpg);
+  background-size: cover;
+}
+
+#qyonbot {
+  background-image: url(../img/qyonbot.jpg);
+  background-size: cover;
+}
+
+#qyonxml {
+  background-image: url(../img/qyonxml.jpg);
+  background-size: cover;
+}
+
+#qyonerp {
+  background-image: url(../img/qyonerp.jpg);
+  background-size: cover;
+}
+
+#qyonerpsbc {
+  background-image: url(../img/erpsbc.jpg);
+  background-size: cover;
+}
+
+#qyonponto {
+  background-image: url(../img/qyonponto.jpg);
+  background-size: cover;
+}
+
+#qyonmedseg {
+  background-image: url(../img/qyonmedseg.jpg);
+  background-size: cover;
+}
+
+.read_button {
+  font-size: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
