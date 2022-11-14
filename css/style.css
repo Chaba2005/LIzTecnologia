@@ -495,20 +495,26 @@
       
     }
 
-    @media (max-width: 600px) {
+    @media (min-width: 768px) {
+      .contato-container {
+        background-color: #fcfcfc;
+        border-radius: 0.375rem;
+        box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.15), 0 0 1.875rem rgba(0, 0, 0, 0.1);
+        height: 30rem !important;
+        margin: auto;
+        padding: 3.75rem;
+        width: 50rem !important;
+        margin-top: 10%;
+      }
+    }
+
+    @media (max-width: 767px) {
       .fon {
         display: flex;
         flex-direction: row;
       }
 
-      .cont-produtos .mycard2 .face.face1{
-        max-height: 18em;
-        max-width: 100%;
-      }
-
-      .cont-produtos .mycard2 .face.face2{
-        max-width: 100%;
-      }
+      
 
       .titlePageCond {
         font-size: 3.5rem;
@@ -522,6 +528,39 @@
         font-size: 3.5rem;
       }
 
+      .contato-container {
+        background-color: #fcfcfc;
+        border-radius: 0.375rem;
+        box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.15), 0 0 1.875rem rgba(0, 0, 0, 0.1);
+        max-height: auto;
+        margin: auto;
+        padding: 1rem !important;
+        position: relative;
+        max-width: 20rem;
+        margin-top: 10%;
+      }
+
+      .c-card{
+        height: auto;
+      }
+
+      .contato-i {
+        margin-top: 1em;
+        justify-content: center !important;
+      }
+
+
+    }
+
+    @media (max-width: 1920px){
+      .cont-produtos .mycard2 .face.face1{
+        max-height: 18em;
+        max-width: 100%;
+      }
+
+      .cont-produtos .mycard2 .face.face2{
+        max-width: 100%;
+      }
     }
 
 
@@ -573,7 +612,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(transparent, rgba(247, 75, 32, 0.623),rgba(248, 66, 10, 0.863));
+  background: linear-gradient(transparent, rgba(127, 60, 252, 0.623),rgba(93, 10, 248, 0.863));
   width: 100%;
   height: 100%;
 }
@@ -635,6 +674,7 @@
   transform: translate(0);
   height: auto;
   width: 35em;
+  margin: auto;
 }
 
 .cont-produtos .mycard2 .face.face2 .content{
@@ -687,6 +727,11 @@
   background-size: cover;
 }
 
+#qyonerpadmcondo {
+  background-image: url(../img/erpadmcondo.jpg);
+  background-size: cover;
+}
+
 .read_button {
   font-size: 1em;
 }
@@ -696,4 +741,153 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float textarea{
+  border: 0;
+  width: 100%;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+  border-radius:0;
+  background-color: transparent;
+}
+
+.label-float input{
+  border: 0;
+  width: 100%;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+  border-radius:0;
+  background-color: transparent;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #3951b2;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float textarea:focus{
+  border-bottom: 2px solid #3951b2;
+}
+
+.label-float textarea::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.label-float input:required:invalid + label{
+  color: red;
+}
+.label-float input:focus:required:invalid{
+  border-bottom: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+  content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #3951b2;
+}
+
+.label-float textarea:required:invalid + label{
+  color: red;
+}
+.label-float textarea:focus:required:invalid{
+  border-bottom: 2px solid red;
+}
+.label-float textarea:required:invalid + label:before{
+  content: '*';
+}
+.label-float textarea:focus + label,
+.label-float textarea:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #3951b2;
+}
+
+
+
+.contato-container {
+  background-color: #fcfcfc;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.15), 0 0 1.875rem rgba(0, 0, 0, 0.1);
+  height: auto;
+  margin: auto;
+  padding: 3.75rem;
+  width: 50rem !important;
+  margin-top: 10%;
+}
+
+.contato-title {
+  font-size: 210%;
+  font-weight: bold;
+}
+
+.cc-button {
+  display: flex;
+  justify-content: center;
+}
+
+.contato-i {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.contato-i i{
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.c-button {
+  background-color: #2c809c;
+  border-radius: 1.875rem;
+  color: #fcfcfc;
+  display: inline-block;
+  max-width: 13.125rem;
+  padding: 0.5625rem 0.9375rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 90ms ease-in;
+  border: none;
+  width: 40%;
+}
+.c-button:hover {
+  background-color: #3da6c8;
+  transition: all 90ms ease-out;
+}
+.c-button:active {
+  transform: translateY(0.09375rem);
 }
