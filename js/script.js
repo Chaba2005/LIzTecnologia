@@ -6,7 +6,7 @@
 
     if (card.classList.contains('active')) {
         // Change button text if has class active
-        return button.textContent = 'Saiba Menos';
+        return button.textContent = 'Voltar';
     }
     
     // Change button text if hasn't class active
